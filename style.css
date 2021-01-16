@@ -8,13 +8,13 @@
   }
 
 .transition-fadeout {
+    position: absolute;
+    width: 431px;
+    height: 109px;
+    left: 505px;
+    top: 457px;
+
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 4s, opacity 4s linear;
-}
-
-.transition-fadein {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 5s linear;
 }
