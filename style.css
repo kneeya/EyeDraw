@@ -1,0 +1,8 @@
+/* Loading Page */
+
+.main-theme {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
+  }
