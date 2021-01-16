@@ -6,3 +6,15 @@
     height: 1024px;
     background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
   }
+
+.transition-fadeout {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 4s, opacity 4s linear;
+}
+
+.transition-fadein {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 5s linear;
+}
