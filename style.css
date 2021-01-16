@@ -1,20 +1,35 @@
-/* Loading Page */
-
 .main-theme {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
-  }
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
+}
 
+/* Loading Page */
 .transition-fadeout {
-    position: absolute;
-    width: 431px;
-    height: 109px;
-    left: 505px;
-    top: 457px;
+  position: absolute;
+  width: 431px;
+  height: 109px;
+  left: 505px;
+  top: 457px;
 
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 4s, opacity 4s linear;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 4s, opacity 4s linear;
+}
+
+/* Drawing Board Page */
+.logo-location {
+  position: absolute;
+  width: 304px;
+  height: 77px;
+  left: 568px;
+  top: 42px;
+}
+
+/* YouTube Video */
+.youtube-video {
+  position: relative;
+  left: 550px;
+  top: 200px;
 }
