@@ -10,9 +10,18 @@
       <!-- stylesheet -->
       <link rel="stylesheet" href="./style.css">
 
+      <!-- artyomjs -->
+      <script type="text/javascript" src="./artyom-source/artyom.window.min.js"></script>
+
+      <!-- paperjs -->
+      <script type="text/javascript" src="./paperjs-v0.12.11/dist/paper-full.min.js"></script>
+      
+      <!-- custom js -->
+      <script type="text/javascript" src="./controls.js"></script>
+
 </head>
 <body class="main-theme">
-    <img src="buttons/Board.png" draggable="false" class="board-location">
+    <!-- <img src="buttons/Board.png" draggable="false" class="board-location"> -->
     <img src="buttons/Help.png" draggable="false" class="help-location">
 
     <img src="EyeDraw.png" draggable="false" class="logo-location">
@@ -58,5 +67,14 @@
         var bgm = document.getElementById("ukulele");
         bgm.volume = 0.2;
     </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <canvas id="myCanvas"></canvas>
+    </div>
 </body>
 </html>

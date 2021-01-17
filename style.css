@@ -1,3 +1,19 @@
+body {
+    margin: 0; 
+    padding: 0
+  }
+  canvas {
+    box-sizing: border-box;
+    display: block;
+    width: 100%; 
+    max-width: 1150px; 
+    height: 100%;
+    max-height: 1000px; 
+    margin: 105px auto;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+  }
 .main-theme {
 
   position: relative;
@@ -93,13 +109,13 @@
   left: 884px;
   top: 156px;
 }
-.board-location {
+/* .board-location {
   position: absolute;
   width: 1160px;
   height: 636px;
   left: 136px;
   top: 214px;
-}
+} */
 .help-location {
   position: absolute;
   width: 119px;
