@@ -12,16 +12,48 @@
 
 </head>
 <body class="main-theme">
+    <img src="buttons/Board.png" draggable="false" class="board-location">
+    <img src="buttons/Help.png" draggable="false" class="help-location">
+
     <img src="VisionArt.png" draggable="false" class="logo-location">
     <img src="buttons/Undo.png" draggable="false" class="undo-location">
     <img src="buttons/Redo.png" draggable="false" class="redo-location">
     <img src="buttons/Play.png" draggable="false" class="play-location">
     <img src="buttons/Eraser.png" draggable="false" class="eraser-location">
-    <img id="pencilopn" src="buttons/Pencil.png" draggable="false" class="pencil-location">
-    
-    <img id="colouropn" src="buttons/Palette.png" draggable="false" class="palette-location">
+    <div class="pencil-popup" onclick="pencilFunction()">
+        <img src="buttons/Pencil.png" draggable="false" class="pencil-location">
+        <span>
+            <img id="pencilopn" src="buttons/PencilFlag.png" draggable="false" class="pencil-flag-location">
+            <img id="full-opacity" src="buttons/Full Opacity.png" draggable="false" class="full-opacity-location">
+            <img id="medium-opacity" src="buttons/Medium Opacity.png" draggable="false" class="medium-opacity-location">
+            <img id="little-opacity" src="buttons/Little Opacity.png" draggable="false" class="little-opacity-location">
+            <img id="big-stroke" src="buttons/Big Stroke.png" draggable="false" class="big-stroke-location">
+            <img id="medium-stroke" src="buttons/Medium Stroke.png" draggable="false" class="medium-stroke-location">
+            <img id="small-stroke" src="buttons/Small Stroke.png" draggable="false" class="small-stroke-location">
+        </span>
+    </div>
+    <script>
+        function pencilFunction() {
+            var pencilpopup = document.getElementById("pencilopn");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("full-opacity");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("medium-opacity");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("little-opacity");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("big-stroke");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("medium-stroke");
+            pencilpopup.classList.toggle("show");
+            var pencilpopup = document.getElementById("small-stroke");
+            pencilpopup.classList.toggle("show");
+        }
+    </script>
+    <img src="buttons/Palette.png" draggable="false" class="palette-location">
     <img id="sharemsg" src="buttons/Share.png" draggable="false" class="share-location">
 
+<<<<<<< HEAD
     <img src="buttons/Board.png" draggable="false" class="board-location">
 
     <audio src="bgm/sunday-afternoon.mp3" loop="true" autoplay="true">
@@ -37,5 +69,12 @@
     
 
 
+=======
+    <audio id="ukulele" src="bgm/sunday-afternoon.mp3" loop="true" autoplay="true"></audio>
+    <script>
+        var bgm = document.getElementById("ukulele");
+        bgm.volume = 0.2;
+    </script>
+>>>>>>> 750c2f0d1486ae422a890bda8ee63365bb8bd8d3
 </body>
 </html>
