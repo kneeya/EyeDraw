@@ -8,11 +8,10 @@
     
   }
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 * {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat358.ani),
-  url(https://cur.cursors-4u.net/nature/nat-4/nat358.png),
+  cursor: url(https://cur.cursors-4u.net/others/oth-7/oth665.cur),
   auto !important;
 }
 
@@ -96,15 +95,15 @@
 }
 .board-location {
     position: absolute;
-    width: 1270px;
-    height: 779px;
+    width: 1160px;
+    height: 636px;
     left: 136px;
-    top: 215px;
+    top: 214px;
 }
 .help-location {
     position: absolute;
     width: 119px;
-    height: 735px;
+    height: 636px;
     left: -4px;
     top: 215px;
 }
