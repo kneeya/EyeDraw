@@ -1,17 +1,15 @@
 .main-theme {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
 }
 
 /* Loading Page */
 .transition-fadeout {
   position: absolute;
-  width: 431px;
-  height: 109px;
-  left: 505px;
-  top: 457px;
+  width: 30%;
+  left: calc(50% - 431px/2 + 0.5px);
+  top: calc(50% - 109px/2 - 0.5px);
 
   visibility: hidden;
   opacity: 0;
@@ -29,7 +27,12 @@
 
 /* YouTube Video */
 .youtube-video {
-  position: relative;
-  left: 550px;
-  top: 200px;
+  position: absolute;
+  margin: 5%;
+  left: 400px;
+  top: 250px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
