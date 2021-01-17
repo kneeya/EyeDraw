@@ -15,185 +15,183 @@
   auto !important;
 }
 
-  /* Loading Page */
-  .transition-fadeout {
-    position: absolute;
-    width: 431px;
-    height: 109px;
-    left: 505px;
-    top: 457px;
+/* Loading Page */
+.transition-fadeout {
+  position: absolute;
+  width: 431px;
+  height: 109px;
+  left: 505px;
+  top: 457px;
   
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 4s, opacity 4s linear;
-  }
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 4s, opacity 4s linear;
+}
 
 /* Instructions Page */
 .youtube-video {
-    position: absolute;
-    margin: 5%;
-    left: 350px;
-    top: 250px;
-  }
+  position: absolute;
+  margin: 5%;
+  left: 350px;
+  top: 250px;
+}
 
 /* Drawing Board Page */
 .logo-location {
-    position: absolute;
-    width: 304px;
-    height: 77px;
-    left: 568px;
-    top: 42px;
+  position: absolute;
+  width: 304px;
+  height: 77px;
+  left: 568px;
+  top: 42px;
 }
 .undo-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 526px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 526px;
+  top: 146px;
 }
 .redo-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 584px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 584px;
+  top: 146px;
 }
 .play-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 642px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 642px;
+  top: 146px;
 }
 .eraser-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 700px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 700px;
+  top: 146px;
 }
 .pencil-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 758px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 758px;
+  top: 146px;
 }
 .palette-location {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 816px;
-    top: 146px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 816px;
+  top: 146px;
 }
 .share-location {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 884px;
-    top: 156px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 884px;
+  top: 156px;
 }
 .board-location {
-    position: absolute;
-    width: 1160px;
-    height: 636px;
-    left: 136px;
-    top: 214px;
+  position: absolute;
+  width: 1160px;
+  height: 636px;
+  left: 136px;
+  top: 214px;
 }
 .help-location {
-    position: absolute;
-    width: 119px;
-    height: 636px;
-    left: -4px;
-    top: 215px;
+  position: absolute;
+  width: 119px;
+  height: 636px;
+  left: -4px;
+  top: 215px;
 }
 .pencil-popup {
-    position: absolute;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .pencil-flag-location {
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    height: 258px;
-    left: 723px;
-    top: 182px;
-  }
-  .pencil-popup-location {
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    height: 258px;
-    left: 723px;
-    top: 182px;
-  }
-  .big-stroke-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 733.5px;
-    top: 258.5px;
-  }
-  .medium-stroke-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 733.5px;
-    top: 312.5px;
-  }
-  .small-stroke-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 733.5px;
-    top: 368px;
-  }
-  .full-opacity-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 787.5px;
-    top: 258.5px;
-  }
-  .medium-opacity-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 787.5px;
-    top: 312.5px;
-  }
-  .little-opacity-location {
-    visibility: hidden;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 787.5px;
-    top: 368px;
-  }
-  .pencil-popup .show {
-    visibility: visible;
-  }
-
-  .yes-button-location {
-    position: absolute;
-    width: 121px;
-    height: 60px;
-    left: 659px;
-    top: 759px;
-  }
-
-  .instructions-prompt {
-    position: absolute;
-    left: 233px;
-    top: 683px;
-  }
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pencil-flag-location {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  height: 258px;
+  left: 723px;
+  top: 182px;
+}
+.pencil-popup-location {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  height: 258px;
+  left: 723px;
+  top: 182px;
+}
+.big-stroke-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 258.5px;
+}
+.medium-stroke-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 312.5px;
+}
+.small-stroke-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 368px;
+}
+.full-opacity-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 258.5px;
+}
+.medium-opacity-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 312.5px;
+}
+.little-opacity-location {
+  visibility: hidden;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 368px;
+}
+.pencil-popup .show {
+  visibility: visible;
+}
+.yes-button-location {
+  position: absolute;
+  width: 121px;
+  height: 60px;
+  left: 659px;
+  top: 759px;
+}
+.instructions-prompt {
+  position: absolute;
+  left: 233px;
+  top: 683px;
+}
