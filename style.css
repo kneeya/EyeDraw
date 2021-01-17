@@ -7,6 +7,11 @@
 ::-webkit-scrollbar {
     display: none;
 }
+* {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat358.ani),
+  url(https://cur.cursors-4u.net/nature/nat-4/nat358.png),
+  auto !important;
+}
 
   /* Loading Page */
   .transition-fadeout {
