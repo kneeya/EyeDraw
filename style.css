@@ -15,13 +15,11 @@ body {
     background-color: #fff;
   }
 .main-theme {
-
   position: relative;
   width: 1440px;
   height: 1024px;
   
   background: linear-gradient(0deg, #4ECAFF, #4ECAFF);
-    
   }
 
 ::-webkit-scrollbar {
@@ -207,18 +205,6 @@ body {
   left: 233px;
   top: 683px;
 }
-
-.box1 {
-  
-}
-
-.box2 {
-
-}
-
-.box3 {
-}
-
 main {
   height: 100vh;
   width: 100vw;
