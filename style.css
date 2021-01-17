@@ -176,3 +176,17 @@
   .pencil-popup .show {
     visibility: visible;
   }
+
+  .yes-button-location {
+    position: absolute;
+    width: 121px;
+    height: 60px;
+    left: 659px;
+    top: 759px;
+  }
+
+  .instructions-prompt {
+    position: absolute;
+    left: 233px;
+    top: 683px;
+  }
