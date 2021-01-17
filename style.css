@@ -23,6 +23,7 @@ body {
   background: linear-gradient(0deg, #4ECAFF, #4ECAFF);
     
   }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -33,15 +34,10 @@ body {
 
 /* Loading Page */
 .transition-fadeout {
-  position: absolute;
-  width: 431px;
-  height: 109px;
-  left: 505px;
-  top: 457px;
-  
+  width: 400px;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 4s, opacity 4s linear;
+  transition: visibility 0s 4s, opacity 10s linear;
 }
 
 /* Instructions Page */
@@ -210,4 +206,25 @@ body {
   position: absolute;
   left: 233px;
   top: 683px;
+}
+
+.box1 {
+  
+}
+
+.box2 {
+
+}
+
+.box3 {
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background: #4ECAFF;
 }

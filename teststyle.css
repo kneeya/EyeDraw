@@ -1,0 +1,23 @@
+.box1 {
+    background: chocolate;
+    justify-items: center;
+    
+}
+
+.box2 {
+    background: crimson;
+
+}
+
+.box3 {
+    background: darkgreen;
+}
+
+main {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
