@@ -37,15 +37,7 @@ body {
   width: 400px;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 4s, opacity 10s linear;
-}
-
-/* Instructions Page */
-.youtube-video {
-  position: absolute;
-  margin: 5%;
-  left: 350px;
-  top: 250px;
+  transition: visibility 0s 4s, opacity 4s linear;
 }
 
 /* Drawing Board Page */
@@ -105,13 +97,7 @@ body {
   left: 884px;
   top: 156px;
 }
-/* .board-location {
-  position: absolute;
-  width: 1160px;
-  height: 636px;
-  left: 136px;
-  top: 214px;
-} */
+
 .help-location {
   position: absolute;
   width: 119px;
@@ -196,27 +182,9 @@ body {
   visibility: visible;
 }
 .yes-button-location {
-  position: absolute;
+  align-self:initial;
   width: 121px;
   height: 60px;
-  left: 659px;
-  top: 759px;
-}
-.instructions-prompt {
-  position: absolute;
-  left: 233px;
-  top: 683px;
-}
-
-.box1 {
-  
-}
-
-.box2 {
-
-}
-
-.box3 {
 }
 
 main {
