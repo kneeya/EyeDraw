@@ -1,5 +1,3 @@
-/* Loading Page */
-
 .main-theme {
     position: relative;
     width: 1440px;
@@ -7,14 +5,91 @@
     background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
   }
 
-.transition-fadeout {
+  /* Loading Page */
+  .transition-fadeout {
     position: absolute;
     width: 431px;
     height: 109px;
     left: 505px;
     top: 457px;
-
+  
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 4s, opacity 4s linear;
+  }
+
+/* Instructions Page */
+.youtube-video {
+    position: absolute;
+    margin: 5%;
+    left: 400px;
+    top: 250px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Drawing Board Page */
+.logo-location {
+    position: absolute;
+    width: 304px;
+    height: 77px;
+    left: 568px;
+    top: 42px;
+}
+.undo-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 526px;
+    top: 146px;
+}
+.redo-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 584px;
+    top: 146px;
+}
+.play-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 642px;
+    top: 146px;
+}
+.eraser-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 700px;
+    top: 146px;
+}
+.pencil-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 758px;
+    top: 146px;
+}
+.palette-location {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 816px;
+    top: 146px;
+}
+.share-location {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 884px;
+    top: 156px;
+}
+.board-location {
+    position: absolute;
+    width: 1381px;
+    height: 779px;
+    left: 30px;
+    top: 215px;
 }
