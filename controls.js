@@ -9,11 +9,17 @@ var isDrawing = false;
 var beginDrawing = false;
 var doneDrawing = false;
 
-var speed = 3;
+// var speed = 3;
 
 var destination = {
     x: null, y: null
 };
+
+var speed = {
+    'slow': 3,
+    'normal': 5,
+    'fast': 10,
+}
 
 var colours = {
     'red': '#FF0000',
@@ -24,25 +30,27 @@ var colours = {
     'purple': '#800080',
     'black': '#000'
 }
-var currentColour = colours['black'];
 
 var sizes = {
     'small': 1,
     'medium': 5,
     'large': 10,
 }
-var currentSize = sizes['medium'];
 
 var opacities = {
     'light': 0.25,
     'translucent': 0.5,
     'dark': 1
 }
+
+var currentSpeed = speed['normal'];
+var currentColour = colours['black'];
+var currentSize = sizes['medium'];
 var currentOpacity = opacities['dark'];
 
 // Initialize Path
 
-function initializePath() {
+function setPath() {
     pencilPath = new Path();
     pencilPath.strokeColor = currentColour;
     pencilPath.strokeWidth = currentSize*2;
@@ -73,6 +81,7 @@ window.onload = function() {
   pencil.strokeColor = 'black';
   pencil.fillColor = currentColour;
   pencil.fillColor.opacity = currentOpacity;
+  pencil.speed = currentSpeed;
   pencilPath = new Path();
   
   destination = {
@@ -88,8 +97,8 @@ window.onload = function() {
     };
     length = Math.sqrt(vector.x**2 + vector.y**2)
 
-    pencil.position.x += (vector.x/length)*speed; 
-    pencil.position.y += (vector.y/length)*speed; 
+    pencil.position.x += (vector.x/length)*currentSpeed; 
+    pencil.position.y += (vector.y/length)*currentSpeed; 
    
     if (isDrawing && !beganDrawing) {
       pencilPath = new Path();
@@ -97,6 +106,7 @@ window.onload = function() {
       pencilPath.strokeColor = currentColour;
       pencilPath.strokeWidth = currentSize*2;
       pencilPath.opacity = currentOpacity;
+      pencilPath.speed = currentSpeed;
       beganDrawing = true;
     }
 
@@ -125,6 +135,7 @@ voicePrompts = [
         indexes: ['start'],
         action: (i) => {
             isDrawing = true;
+            beganDrawing = true;
         }
     },
     {
@@ -136,17 +147,47 @@ voicePrompts = [
         }
     },
     {
+        indexes: ['slow','normal','fast'],
+        action: (i) => {
+            if (i==0) currentSpeed = speed['slow'];
+            if (i==1) currentSpeed = speed['normal'];
+            if (i==2) currentSpeed = speed['fast'];
+            setPath();
+            reset();
+        }
+    },
+    {
         indexes: ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'black'],
         action: function(i) {
-            if (i==0) currentColour - colours['red'];
-            if (i==1) currentColour - colours['orange'];
-            if (i==2) currentColour - colours['yellow'];
-            if (i==3) currentColour - colours['green'];
-            if (i==4) currentColour - colours['blue'];
-            if (i==5) currentColour - colours['purple'];
-            if (i==6) currentColour - colours['black'];
+            if (i==0) currentColour = colours['red'];
+            if (i==1) currentColour = colours['orange'];
+            if (i==2) currentColour = colours['yellow'];
+            if (i==3) currentColour = colours['green'];
+            if (i==4) currentColour = colours['blue'];
+            if (i==5) currentColour = colours['purple'];
+            if (i==6) currentColour = colours['black'];
             setPath();
-            penReset();
+            reset();
+        }
+    },
+    {
+        indexes: ['small', 'medium', 'large'],
+        action: (i) => {
+            if (i==0) currentSize = sizes['small'];
+            if (i==1) currentSize = sizes['medium'];
+            if (i==2) currentSize = sizes['large'];
+            setPath();
+            reset();
+        }
+    },
+    {
+        indexes: ['light', 'translucent', 'dark'],
+        action: (i) => {
+            if (i==0) currentOpacity = opacities['light'];
+            if (i==1) currentOpacity = opacities['translucent'];
+            if (i==2) currentOpacity = opacities['dark'];
+            setPath();
+            reset();
         }
     }
 ]
@@ -155,18 +196,14 @@ voicePrompts = [
 artyom.addCommands(voicePrompts); // Add voice commands with addCommands
 
 // This function activates artyom and will listen all that you say forever (requires https conection, otherwise a dialog will request if you allow the use of the microphone)
-function startContinuousArtyom(){
-    artyom.fatality();// use this to stop any of
-
-    setTimeout(function(){// if you use artyom.fatality , wait 250 ms to initialize again.
-         artyom.initialize({
-            lang:"en-GB",// A lot of languages are supported. Read the docs !
-            continuous:true,// Artyom will listen forever
-            listen:true, // Start recognizing
-            debug:true, // Show everything in the console
-            speed:1 // talk normally
-        }).then(function(){
-            console.log("Ready to work !");
-        });
-    },250);
-}
+setTimeout(function(){// if you use artyom.fatality , wait 250 ms to initialize again.
+    artyom.initialize({
+       lang:"en-GB",// A lot of languages are supported. Read the docs !
+       continuous:true,// Artyom will listen forever
+       listen:true, // Start recognizing
+       debug:true, // Show everything in the console
+       speed:1 // talk normally
+   }).then(function(){
+       console.log("Ready to work !");
+   });
+},250);
