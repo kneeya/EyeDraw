@@ -93,3 +93,59 @@
     left: 30px;
     top: 215px;
 }
+.pencil-popup-location {
+  position: absolute;
+  width: 120px;
+  height: 258px;
+  left: 723px;
+  top: 182px;
+}
+
+.big-stroke-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 258.5px;
+}
+
+.medium-stroke-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 312.5px;
+  
+}
+
+.small-stroke-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 733.5px;
+  top: 368px;  
+}
+
+.full-opacity-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 258.5px;
+}
+
+.medium-opacity-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 312.5px;
+}
+
+.little-opacity-location {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 787.5px;
+  top: 368px;
+}
