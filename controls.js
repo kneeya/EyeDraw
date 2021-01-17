@@ -1,6 +1,3 @@
-// install window 
-paper.install(window);
-
 // default variables
 
 var pencilPath;
@@ -8,8 +5,6 @@ var pencil;
 var isDrawing = false;
 var beginDrawing = false;
 var doneDrawing = false;
-
-// var speed = 3;
 
 var destination = {
     x: null, y: null
@@ -32,9 +27,9 @@ var colours = {
 }
 
 var sizes = {
-    'small': 1,
-    'medium': 5,
-    'large': 10,
+    'small': 3,
+    'medium': 8,
+    'large': 12,
 }
 
 var opacities = {
@@ -47,6 +42,9 @@ var currentSpeed = speed['normal'];
 var currentColour = colours['black'];
 var currentSize = sizes['medium'];
 var currentOpacity = opacities['dark'];
+
+// install window 
+paper.install(window);
 
 // Initialize Path
 
@@ -70,7 +68,7 @@ function reset() {
     pencil = new Path.Circle(new Point(prevPosition.x, prevPosition.y), currentSize);
     pencil.strokeColor = 'black';
     pencil.fillColor = currentColour;
-    pencil.fillColor.opacity = currentOpacity;
+    pencil.fillColor.alpha = currentOpacity;
 }
 
 // Cursor and path randomization
@@ -80,7 +78,7 @@ window.onload = function() {
   pencil = new Path.Circle(new Point(80, 50), currentSize);
   pencil.strokeColor = 'black';
   pencil.fillColor = currentColour;
-  pencil.fillColor.opacity = currentOpacity;
+  pencil.fillColor.alpha = currentOpacity;
   pencil.speed = currentSpeed;
   pencilPath = new Path();
   
@@ -107,6 +105,8 @@ window.onload = function() {
       pencilPath.strokeWidth = currentSize*2;
       pencilPath.opacity = currentOpacity;
       pencilPath.speed = currentSpeed;
+      pencilPath.strokeJoin = 'round';
+      pencilPath.strokeCap = 'round';
       beganDrawing = true;
     }
 
@@ -114,7 +114,7 @@ window.onload = function() {
       pencilPath.add(new Point(pencil.position.x, pencil.position.y));
     }
 
-    if (length < 20) {
+    if (length < 15) {
       if (isDrawing) {
         pencilPath.flatten();
       }
