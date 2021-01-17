@@ -4,6 +4,9 @@
     height: 1024px;
     background: linear-gradient(180deg, #FC7A79 0%, #D3D8FF 100%);
   }
+::-webkit-scrollbar {
+    display: none;
+}
 
   /* Loading Page */
   .transition-fadeout {
@@ -24,9 +27,6 @@
     margin: 5%;
     left: 400px;
     top: 250px;
-  }
-  ::-webkit-scrollbar {
-    display: none;
   }
 
 /* Drawing Board Page */
@@ -88,8 +88,91 @@
 }
 .board-location {
     position: absolute;
-    width: 1381px;
+    width: 1270px;
     height: 779px;
-    left: 30px;
+    left: 136px;
     top: 215px;
 }
+.help-location {
+    position: absolute;
+    width: 119px;
+    height: 735px;
+    left: -4px;
+    top: 215px;
+}
+.pencil-popup {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .pencil-flag-location {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    height: 258px;
+    left: 723px;
+    top: 182px;
+  }
+  .pencil-popup-location {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    height: 258px;
+    left: 723px;
+    top: 182px;
+  }
+  .big-stroke-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 733.5px;
+    top: 258.5px;
+  }
+  .medium-stroke-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 733.5px;
+    top: 312.5px;
+  }
+  .small-stroke-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 733.5px;
+    top: 368px;
+  }
+  .full-opacity-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 787.5px;
+    top: 258.5px;
+  }
+  .medium-opacity-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 787.5px;
+    top: 312.5px;
+  }
+  .little-opacity-location {
+    visibility: hidden;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 787.5px;
+    top: 368px;
+  }
+  .pencil-popup .show {
+    visibility: visible;
+  }
