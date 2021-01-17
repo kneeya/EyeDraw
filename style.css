@@ -50,9 +50,8 @@ main {
 .logo-location {
   position: absolute;
   width: 304px;
-  height: 77px;
   left: 568px;
-  top: 42px;
+  top: 70px;
 }
 .undo-location {
   position: absolute;
